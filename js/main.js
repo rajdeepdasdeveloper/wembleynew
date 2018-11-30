@@ -483,7 +483,7 @@
 
   }
 
-  try {
+  try { 
     /* Partner 1 */
     $('#our-services .services-content-items').owlCarousel({
       loop: true,
