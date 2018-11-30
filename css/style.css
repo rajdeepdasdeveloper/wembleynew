@@ -1947,6 +1947,59 @@ a.pro-link:hover {
     right: -30px;
 }
 
+/* Our Services */
+
+#our-services{
+  background-image: url(../img/customize.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0;
+}
+#our-services p{
+    font-size: 16px;
+}
+#our-services .services-inner {
+  padding: 50px 0;
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+}
+#our-services .services-heading h2 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#our-services .services-content {
+  padding-top: 0;
+}
+#our-services .services-content .services-content-items {
+  padding-top: 75px;
+  list-style: none;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+#our-services .services-content .services-content-items:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#our-services .services-content .services-content-items .services-content-item {
+  text-align: center;
+  padding: 0 70px;
+}
+#our-services .services-content .services-content-items .services-content-item p {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #111;
+  font-weight: bold;
+}
 
 /*Our Team*/
 
@@ -2236,7 +2289,33 @@ a.pro-link:hover {
 
 
 /*latest project 1*/
-
+.lb-data .lb-close{
+    position: absolute;
+    bottom: calc(100% - 25px);
+    right: 15px;
+}
+@media (max-width: 810px){
+    .lb-data .lb-close{
+        position: absolute;
+        bottom: calc(100% + 15px);
+        right: 15px;
+    } 
+}
+.lightboxOverlay{
+   z-index: 99998;
+}
+.lightbox {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    text-align: center;
+    line-height: 0;
+    font-weight: normal;
+    top: calc(50% + 15px) !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+}
 .latest-project {
     padding-top: 90px;
 }
@@ -2266,7 +2345,12 @@ a.pro-link:hover {
     -moz-transition: 0.3s;
     transition: 0.3s;
 }
-
+.latest__item--inner a h3, .latest__item--inner a div{
+    color:#fff;
+}
+.latest__item--inner a:hover h3, .latest__item--inner a:hover div{
+    color:#ebcd1e;
+}
 .latest__item img {
     -webkit-transition: 0.6s;
     -o-transition: 0.6s;

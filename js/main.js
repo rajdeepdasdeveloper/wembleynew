@@ -485,6 +485,53 @@
 
   try {
     /* Partner 1 */
+    $('#our-services .services-content-items').owlCarousel({
+      loop: true,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      dots: true,
+      smartSpeed: 1000,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          margin: 5
+        },
+        576: {
+          items: 3,
+          nav: false,
+          margin: 8
+        },
+        768: {
+          items: 3,
+          nav: false,
+          margin: 10
+        },
+        992: {
+          items: 3,
+          nav: false,
+          margin: 20
+        },
+        1024: {
+          items: 3,
+          nav: false,
+          loop: true
+        },
+        1200: {
+          items: 4,
+          nav: false,
+          loop: true
+        }
+      }
+    });
+  } catch (error) {
+
+  }
+
+  try {
+    /* Partner 1 */
     $('#owl-partner-1').owlCarousel({
       loop: true,
       responsiveClass: true,
