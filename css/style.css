@@ -886,7 +886,7 @@ a.au-btn--white {
 
 .header-stick .logo {
     margin-top: 4px;
-    width: 55px;
+    width: 110px;
 }
 
 .header-stick nav .sub-menu {
@@ -920,10 +920,10 @@ header h1 {
 }
 
 .logo {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
     text-align: center;
-    width: 70px;
+    width: 180px;
 }
 
 nav.menu-desktop {
@@ -952,9 +952,6 @@ nav>ul>li>a {
     -o-transition: 0.3s;
     -moz-transition: 0.3s;
     transition: 0.3s;
-}
-.li-has-sub:nth-child(4), .li-has-sub:nth-child(5), .li-has-sub:nth-child(6){
-    display: none;
 }
 
 .sub-menu {
@@ -1955,13 +1952,18 @@ a.pro-link:hover {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  padding: 100px 0;
+  padding: 100px 15px;
+}
+#our-services .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 25px;
 }
 #our-services p{
-    font-size: 16px;
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 20px;
 }
 #our-services .services-inner {
-  padding: 50px 0;
+  padding: 30px 0 40px;
   max-width: 1024px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.95);
@@ -1974,12 +1976,13 @@ a.pro-link:hover {
   margin-bottom: 70px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  padding: 0 30px;
 }
 #our-services .services-content {
   padding-top: 0;
 }
 #our-services .services-content .services-content-items {
-  padding-top: 75px;
+  padding-top: 45px;
   list-style: none;
   max-width: 1000px;
   margin: 0 auto;
@@ -1996,9 +1999,10 @@ a.pro-link:hover {
 }
 #our-services .services-content .services-content-items .services-content-item p {
   margin-top: 15px;
-  font-size: 16px;
+  font-size: 14px;
   color: #111;
   font-weight: bold;
+  padding: 0;
 }
 
 /*Our Team*/
@@ -2321,7 +2325,7 @@ a.pro-link:hover {
 }
 
 .latest__item {
-    border: 2px solid #f1f1f1;
+    border: 0 solid #f1f1f1;
     position: relative;
     overflow: hidden;
 }
@@ -3606,7 +3610,17 @@ h2.title--small {
 
 
 /*Header*/
-
+.menu-desktop{
+    margin-top: 3px;
+}
+.menu-desktop > ul > li > a{
+    text-decoration: none;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
 .header4 {
     position: absolute;
     z-index: 100;
