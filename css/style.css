@@ -885,8 +885,8 @@ a.au-btn--white {
 }
 
 .header-stick .logo {
-    margin-top: 4px;
-    width: 110px;
+    margin-top: 0;
+    width: 160px;
 }
 
 .header-stick nav .sub-menu {
@@ -920,7 +920,7 @@ header h1 {
 }
 
 .logo {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 10px;
     text-align: center;
     width: 180px;
@@ -1343,6 +1343,7 @@ nav.menu-mobile>ul {
 }
 
 nav.menu-mobile>ul>li {
+    display: block;
     position: relative;
     padding: 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -1995,7 +1996,11 @@ a.pro-link:hover {
 }
 #our-services .services-content .services-content-items .services-content-item {
   text-align: center;
-  padding: 0 70px;
+  padding: 0 50px;
+}
+#our-services .services-content .services-content-items .services-content-item img{
+    width: 50%;
+    display: inline-block;
 }
 #our-services .services-content .services-content-items .services-content-item p {
   margin-top: 15px;
@@ -7218,4 +7223,13 @@ input[type=number] {
     #menu-canvas {
         display: none;
     }
+}
+
+/* Parsley */
+
+.parsley-errors-list{
+    color:#F00;
+    list-style: none;
+    padding-bottom: 5px;
+    margin-top:-2px;
 }

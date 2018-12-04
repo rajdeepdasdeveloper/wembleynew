@@ -11,7 +11,7 @@
             that.on('submit', function (e) {
                 e.preventDefault();
 
-                var url = "includes/contact-form.php";
+                var url = "php/contact_code.php";
 
                 $.ajax({
                     type: "POST",
