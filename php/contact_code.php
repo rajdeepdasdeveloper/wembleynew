@@ -3,7 +3,6 @@ if(isset($_POST['email'])) {
 
   if($_POST['name'] != ""){
      echo('Spamming Detected!');
-     
      die();
   }
   function died($error) {
