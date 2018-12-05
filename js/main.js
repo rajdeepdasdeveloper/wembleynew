@@ -32,6 +32,11 @@
     $('#menu-canvas').removeClass('menu-canvas--show');
     $('#menu-canvas').addClass('menu-canvas--hidden');
   });
+
+  $(".testi-partner .owl-carousel a").click(function(e){
+      e.preventDefault();
+  });
+
   try {
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
@@ -532,7 +537,54 @@
 
   try {
     /* Partner 1 */
-    $('#owl-partner-1').owlCarousel({
+    $('#banking-sectors').owlCarousel({
+      loop: true,
+      responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: false,
+      dots: true,
+      smartSpeed: 1000,
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          margin: 5
+        },
+        576: {
+          items: 3,
+          nav: false,
+          margin: 8
+        },
+        768: {
+          items: 3,
+          nav: false,
+          margin: 10
+        },
+        992: {
+          items: 3,
+          nav: false,
+          margin: 20
+        },
+        1024: {
+          items: 3,
+          nav: false,
+          loop: true
+        },
+        1200: {
+          items: 4,
+          nav: false,
+          loop: true
+        }
+      }
+    });
+  } catch (error) {
+
+  }
+
+  try {
+    /* Partner 2 */
+    $('#private-and-public').owlCarousel({
       loop: true,
       responsiveClass: true,
       autoplay: true,

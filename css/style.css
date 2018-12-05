@@ -781,7 +781,7 @@ a.au-btn--white {
 }
 
 .overlay--dark {
-    background: rgba(0, 0, 0, 0.8);
+    background: #000;
 }
 
 .overlay--border {
@@ -886,7 +886,8 @@ a.au-btn--white {
 
 .header-stick .logo {
     margin-top: 0;
-    width: 160px;
+    width: 185px;
+    margin-bottom: 12px;
 }
 
 .header-stick nav .sub-menu {
@@ -923,7 +924,7 @@ header h1 {
     margin-bottom: 15px;
     margin-top: 10px;
     text-align: center;
-    width: 180px;
+    width: 205px;
 }
 
 nav.menu-desktop {
@@ -2153,7 +2154,7 @@ a.pro-link:hover {
     line-height: 22px;
     position: relative;
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 15px;
 }
 
 .testi-img {
@@ -2334,6 +2335,15 @@ a.pro-link:hover {
     position: relative;
     overflow: hidden;
 }
+.latest__item::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border:2px solid #fff;
+    left:0;
+    top:0;
+}
 
 .latest__item--content {
     position: absolute;
@@ -2345,6 +2355,7 @@ a.pro-link:hover {
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    z-index: 1;
 }
 
 .latest__item--inner {
@@ -2701,8 +2712,14 @@ a.pro-link:hover {
 footer {
     position: relative;
     text-align: center;
+    border-bottom: 32px solid #333;
 }
-
+footer .foot-logo{
+    padding: 15px;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 4px;
+}
 .form-footer {
     margin-top: 43px;
 }
@@ -2776,6 +2793,8 @@ footer .social {
 
 .copyright span {
     color: #ebcd1e;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 
@@ -3502,6 +3521,12 @@ h2.title--small {
     padding-bottom: 70px;
     padding-top: 55px;
 }
+.testi-partner .row h2{
+    font-size: 20px;
+}
+.testi-partner .owl-carousel a{
+    cursor: default;
+}
 
 .testi-partner__left,
 .testi-partner__right {
@@ -3588,10 +3613,18 @@ h2.title--small {
 .partner-wrap1 {
     position: relative;
 }
+.partner-wrap1 .owl-item{
+    display: flex;
+    align-items: center;
+    height: 120px;
+}
+.partner-wrap1 .owl-item img{
+    width: 110px;
+}
 
 .partner-wrap1 .owl-stage-outer {
     padding: 41px 24px;
-    border: 1px solid #f8f8f8;
+    border: 1px solid #f1f1f1;
 }
 
 .partner-wrap1 .partner__item {
@@ -7232,4 +7265,23 @@ input[type=number] {
     list-style: none;
     padding-bottom: 5px;
     margin-top:-2px;
+}
+
+/* Serving Since */
+
+.serving-since{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    background-color: #333;
+    font-family: "Montserrat", sans-serif;
+    color:#fff;
+    z-index: 5;
+    padding: 5px;
+    text-align: center;
+}
+.serving-since span{
+    color:#ebcd1e;
+    font-weight: bold;
 }
