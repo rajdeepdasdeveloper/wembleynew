@@ -431,47 +431,88 @@
 
   try {
     /* Our Team 2 */
-    $('#owl-our-team-2').owlCarousel({
-      loop: true,
-      margin: 30,
-      responsiveClass: true,
-      smartSpeed: 1000,
-      responsive: {
-        0: {
-          items: 1,
-          nav: false,
-          dots: true,
-          margin: 0
-        },
-        768: {
-          items: 2,
-          nav: false,
-          dots: true,
-          margin: 20
-        },
-        992: {
-          items: 3,
-          nav: false,
-          dots: true,
-          margin: 20
-        },
-        1024: {
-          items: 4,
-          nav: false,
-          dots: true,
-          margin: 20
-        },
-        1200: {
-          items: 4,
-          nav: false,
-          dots: true,
-          loop: true
-        }
-      }
-    });
+    // $('#owl-our-team-2').owlCarousel({
+    //   loop: false,
+    //   margin: 30,
+    //   responsiveClass: true,
+    //   smartSpeed: 1000,
+    //   responsive: {
+    //     0: {
+    //       items: 1,
+    //       nav: false,
+    //       dots: true,
+    //       margin: 0
+    //     },
+    //     768: {
+    //       items: 1,
+    //       nav: false,
+    //       dots: true,
+    //       margin: 20
+    //     },
+    //     992: {
+    //       items: 3,
+    //       nav: false,
+    //       dots: true,
+    //       margin: 20
+    //     },
+    //     1024: {
+    //       items: 3,
+    //       nav: false,
+    //       dots: true,
+    //       margin: 20
+    //     },
+    //     1200: {
+    //       items: 4,
+    //       nav: false,
+    //       dots: true
+    //     }
+    //   }
+    // });
   } catch (error) {
 
   }
+
+  // Select and loop the container element of the elements you want to equalise
+    $('#owl-our-team-2').each(function(){  
+      
+      // Cache the highest
+      var highestBox = 0;
+      
+      // Select and loop the elements you want to equalise
+      $('.description', this).each(function(){
+        
+        // If this box is higher than the cached highest then store it
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height(); 
+        }
+      
+      });  
+            
+      // Set the height of all those children to whichever was highest 
+      $('.description',this).height(highestBox);
+                    
+    }); 
+
+    // Select and loop the container element of the elements you want to equalise
+    $('#owl-our-team-2').each(function(){  
+      
+      // Cache the highest
+      var highestBox = 0;
+      
+      // Select and loop the elements you want to equalise
+      $('.our-team2__detail', this).each(function(){
+        
+        // If this box is higher than the cached highest then store it
+        if($(this).height() > highestBox) {
+          highestBox = $(this).height(); 
+        }
+      
+      });  
+            
+      // Set the height of all those children to whichever was highest 
+      $('.our-team2__detail',this).height(highestBox);
+                    
+    });
 
   try {
     /* Testi 1 */
@@ -500,12 +541,12 @@
       smartSpeed: 1000,
       responsive: {
         0: {
-          items: 2,
+          items: 1,
           nav: false,
           margin: 5
         },
         576: {
-          items: 3,
+          items: 1,
           nav: false,
           margin: 8
         },
@@ -728,7 +769,6 @@
   } catch (error) {
 
   }
-
 
   // BACK TO TOP BUTTON
   $(window).scroll(function () {
