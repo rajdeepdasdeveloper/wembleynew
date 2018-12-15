@@ -2134,12 +2134,11 @@ a.pro-link:hover {
     margin-top: 60px;
 }
 
-#owl-client-say,
+/*#owl-client-say,
 #owl-our-team,
 #owl-re-pro-2,
 #owl-testi,
 #owl-partner,
-#owl-our-team-2,
 #owl-testi-1,
 #owl-partner-1,
 #owl-client-say-2,
@@ -2147,7 +2146,7 @@ a.pro-link:hover {
 #owl-partner-2,
 #owl-client-say-1 {
     touch-action: none;
-}
+}*/
 
 #owl-our-team.row {
     margin: 0;
