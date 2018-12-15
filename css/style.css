@@ -857,7 +857,7 @@ a.au-btn--white {
 }
 
 .parallax--footer {
-    background-image: url('../img/bg-footer.jpg');
+    /*background-image: url('../images/bg-footer.jpg');*/
     padding: 40px 0;
 }
 
@@ -1833,7 +1833,7 @@ nav.menu-mobile>ul>li>ul {
 
 .parallax--slide-re-pro {
     padding: 75px 80px;
-    background-image: url('../img/bg-recent-project.jpg');
+    /*background-image: url('../img/bg-recent-project.jpg');*/
 }
 
 .pro-info {
@@ -1991,7 +1991,7 @@ a.pro-link:hover {
 /* Our Services */
 
 #our-services{
-  background-image: url(../img/customize.jpg);
+  background-image: url(../images/customize.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2719,7 +2719,7 @@ a.pro-link:hover {
 /* Partner */
 
 .partner {
-    background-image: url('../img/bg-partner.jpg');
+    /*background-image: url('../img/bg-partner.jpg');*/
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
