@@ -3689,6 +3689,9 @@ h2.title--small {
 
 .partner-wrap1 {
     position: relative;
+    padding: 15px;
+    border: 1px solid #f1f1f1;
+
 }
 .partner-wrap1 .owl-item{
     display: flex;
@@ -5630,7 +5633,9 @@ body.box {
     padding-right: 30px;
 }
 
-
+.tp-loader.spinner0{
+    display: none;
+}
 /*End Service v2*/
 
 
@@ -5638,7 +5643,7 @@ body.box {
 
 .parallax--nav-2 {
     padding: 125px 0;
-    background-image: url('../img/bg-head-05.jpg');
+    background-image: url('../images/bg-head-05.jpg');
 }
 
 .contact-content {
@@ -7361,4 +7366,47 @@ input[type=number] {
 .serving-since span{
     color:#ebcd1e;
     font-weight: bold;
+}
+
+-webkit-@keyframes background-slide {
+    
+}
+
+@keyframes background-slide {
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: 100%;
+    }
+}
+
+
+
+#banking-sectors .screen-display{
+    background-image: url(../images/clients/banking/banking.jpg);
+    background-position: 0 0;
+    animation-name: background-slide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding: 50px 0;
+}
+#banking-sectors .screen-display img{
+    visibility: hidden;
+}
+
+#private-and-public .screen-display{
+    background-image: url(../images/clients/private/private.jpg);
+    background-position: 0 0;
+    animation-name: background-slide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding: 50px 0;
+}
+#private-and-public .screen-display img{
+    visibility: hidden;
 }
